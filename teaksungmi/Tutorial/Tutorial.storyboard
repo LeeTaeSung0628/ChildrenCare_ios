@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutoriral View Controler-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FTMVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FTutoriralViewControler" customModule="teaksungmi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aL9-5Y-rhd" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aL9-5Y-rhd" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="DJH-e2-H7l" customClass="ImageSlideshow"/>
+                            <constraint firstItem="aL9-5Y-rhd" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="mNl-1v-ii7" customClass="ImageSlideshow"/>
+                            <constraint firstAttribute="bottom" secondItem="aL9-5Y-rhd" secondAttribute="bottom" id="pnh-Ri-17L" customClass="ImageSlideshow"/>
+                            <constraint firstItem="aL9-5Y-rhd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="qwk-ap-2qi" customClass="ImageSlideshow"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slideshow" destination="aL9-5Y-rhd" id="qF9-ya-HFo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304.34782608695656" y="136.60714285714286"/>
+        </scene>
+        <!--Tutoriral View Controler-->
+        <scene sceneID="O7J-uc-8r3">
+            <objects>
+                <viewController storyboardIdentifier="TMVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x6h-aX-SZQ" customClass="TutoriralViewControler" customModule="teaksungmi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mD2-iJ-JCN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MV3-v2-Ra8" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vb5-fK-5qn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MV3-v2-Ra8" firstAttribute="trailing" secondItem="vb5-fK-5qn" secondAttribute="trailing" id="AZD-Jv-ChQ" customClass="ImageSlideshow"/>
+                            <constraint firstItem="MV3-v2-Ra8" firstAttribute="top" secondItem="mD2-iJ-JCN" secondAttribute="top" id="X1Z-N1-uIl" customClass="ImageSlideshow"/>
+                            <constraint firstAttribute="bottom" secondItem="MV3-v2-Ra8" secondAttribute="bottom" id="XEf-cY-MRU" customClass="ImageSlideshow"/>
+                            <constraint firstItem="MV3-v2-Ra8" firstAttribute="leading" secondItem="vb5-fK-5qn" secondAttribute="leading" id="xnw-Xn-2Ri" customClass="ImageSlideshow"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slideshow" destination="MV3-v2-Ra8" id="LSy-E4-xqZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd8-LJ-zat" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="137"/>
+        </scene>
+        <!--Ad Tutoriral View Controler-->
+        <scene sceneID="o6y-Tg-Agd">
+            <objects>
+                <viewController storyboardIdentifier="AdTMVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kj0-fO-FVl" customClass="AdTutoriralViewControler" customModule="teaksungmi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="of8-BE-un1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMt-a9-vK5" customClass="ImageSlideshow" customModule="ImageSlideshow">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="koD-f1-bmt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WMt-a9-vK5" secondAttribute="bottom" id="9WY-8z-Ixy" customClass="ImageSlideshow"/>
+                            <constraint firstItem="WMt-a9-vK5" firstAttribute="leading" secondItem="koD-f1-bmt" secondAttribute="leading" id="NEk-pf-ihu" customClass="ImageSlideshow"/>
+                            <constraint firstItem="WMt-a9-vK5" firstAttribute="top" secondItem="of8-BE-un1" secondAttribute="top" id="fdj-rJ-dOY" customClass="ImageSlideshow"/>
+                            <constraint firstItem="WMt-a9-vK5" firstAttribute="trailing" secondItem="koD-f1-bmt" secondAttribute="trailing" id="xwS-48-7ly" customClass="ImageSlideshow"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="slideshow" destination="WMt-a9-vK5" id="GOP-uB-RSJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKW-rG-rVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1181" y="137"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

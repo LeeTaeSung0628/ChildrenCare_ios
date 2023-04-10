@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="prF-e1-XmH">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BMJUA_otf.otf">
+            <string>BMJUAOTF</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="nhO-vS-geh">
+            <objects>
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="prF-e1-XmH" customClass="LoginViewController" customModule="teaksungmi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Login" id="nUr-wa-5Os">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xKN-oa-DyD">
+                                <rect key="frame" x="135" y="124" width="158.33333333333337" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="nCe-Ly-3kS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Z8f-0O-6uN">
+                                <rect key="frame" x="171.33333333333337" y="254" width="237" height="370"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="name" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름을 입력해주세요." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MX3-rj-jhn">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="ID를 입력하세요.">
+                                            <accessibilityTraits key="traits" none="YES"/>
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="나이를 입력하세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ki9-DD-SfI">
+                                        <rect key="frame" x="0.0" y="48" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="학년을 입력학세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dd1-J3-K3S">
+                                        <rect key="frame" x="0.0" y="96" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="반을 입력하세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxe-9U-V5K">
+                                        <rect key="frame" x="0.0" y="144" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="성별을 입력하세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-AV-qWl">
+                                        <rect key="frame" x="0.0" y="192" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="URL" returnKeyType="done"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호를 입력하세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-Mt-yrk">
+                                        <rect key="frame" x="0.0" y="240" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="친구,부모님번호를 입력하세요" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8TV-nT-7fd">
+                                        <rect key="frame" x="0.0" y="288" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="이름을 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="교사용 비밀번호" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QuC-F1-5Wl">
+                                        <rect key="frame" x="0.0" y="336" width="237" height="34"/>
+                                        <accessibility key="accessibilityConfiguration" hint="코드를 입력하세요."/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6KC-ts-995">
+                                <rect key="frame" x="21" y="254" width="87" height="370"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이름 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJV-YQ-a7R">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="나이:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EaP-Dw-TZJ">
+                                        <rect key="frame" x="0.0" y="50" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="학년:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nY9-Ug-ogV">
+                                        <rect key="frame" x="0.0" y="100" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9R-ow-usb">
+                                        <rect key="frame" x="0.0" y="150" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성별:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNv-B6-2vR">
+                                        <rect key="frame" x="0.0" y="200" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="연락처:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egk-7L-Tds">
+                                        <rect key="frame" x="0.0" y="250" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비상연락처:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4h-U3-FQ6">
+                                        <rect key="frame" x="0.0" y="300" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="교사용코드:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pc0-oa-yqo">
+                                        <rect key="frame" x="0.0" y="350" width="87" height="20"/>
+                                        <fontDescription key="fontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-B9-oP8">
+                                <rect key="frame" x="150" y="682" width="128" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="06Z-ur-XxE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="확인">
+                                    <fontDescription key="titleFontDescription" name="BMJUAOTF" family="BM JUA_OTF" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="save:" destination="prF-e1-XmH" eventType="touchUpInside" id="649-9o-dds"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iNR-7C-WIu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Login"/>
+                        <constraints>
+                            <constraint firstItem="xKN-oa-DyD" firstAttribute="centerX" secondItem="nUr-wa-5Os" secondAttribute="centerX" id="9qj-aT-yd2"/>
+                            <constraint firstItem="6KC-ts-995" firstAttribute="leading" secondItem="iNR-7C-WIu" secondAttribute="leading" constant="21" id="DLk-HL-S72"/>
+                            <constraint firstItem="Z8f-0O-6uN" firstAttribute="top" secondItem="6KC-ts-995" secondAttribute="top" id="Ef2-Za-h8g"/>
+                            <constraint firstItem="XNc-B9-oP8" firstAttribute="leading" secondItem="iNR-7C-WIu" secondAttribute="leading" constant="150" id="Nyh-hQ-vqs"/>
+                            <constraint firstItem="Z8f-0O-6uN" firstAttribute="top" secondItem="xKN-oa-DyD" secondAttribute="bottom" constant="40" id="OTC-ly-0VY"/>
+                            <constraint firstItem="XNc-B9-oP8" firstAttribute="top" secondItem="Z8f-0O-6uN" secondAttribute="bottom" constant="58" id="VDN-DY-peS"/>
+                            <constraint firstItem="xKN-oa-DyD" firstAttribute="top" secondItem="iNR-7C-WIu" secondAttribute="top" constant="80" id="kio-LQ-eLC"/>
+                            <constraint firstItem="iNR-7C-WIu" firstAttribute="trailing" secondItem="Z8f-0O-6uN" secondAttribute="trailing" constant="19.666666666666629" id="lHm-ce-TtC"/>
+                            <constraint firstItem="iNR-7C-WIu" firstAttribute="trailing" secondItem="XNc-B9-oP8" secondAttribute="trailing" constant="150" id="sBm-cg-a4c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PphoneN" destination="8TV-nT-7fd" id="nBr-st-gwC"/>
+                        <outlet property="admin" destination="QuC-F1-5Wl" id="8Bt-Ze-cRO"/>
+                        <outlet property="age" destination="ki9-DD-SfI" id="I8D-ya-laQ"/>
+                        <outlet property="classN" destination="Rxe-9U-V5K" id="Pla-sg-DdK"/>
+                        <outlet property="grade" destination="dd1-J3-K3S" id="6IL-g7-GaQ"/>
+                        <outlet property="name" destination="MX3-rj-jhn" id="9c7-tH-u9U"/>
+                        <outlet property="phoneN" destination="gHq-Mt-yrk" id="PV5-a2-70k"/>
+                        <outlet property="save" destination="XNc-B9-oP8" id="zS5-Ku-YYM"/>
+                        <outlet property="sung" destination="Prn-AV-qWl" id="arQ-Ky-b60"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6GQ-0w-GlL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518.69158878504675" y="119.87041036717063"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
