@@ -4,11 +4,14 @@ import Firebase
 import FirebaseMessaging
 import GoogleMaps
 import RealmSwift
-
+import CoreLocation
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
     
+    var locationManager = CLLocationManager()
+    var str_latitude : String = ""
+    var str_longitude : String = ""
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
@@ -90,6 +93,45 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    //리모트 노티피케이션
+    func application( _ application: UIApplication, didReceiveRemoteNotification location: [AnyHashable: Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
+  ) {
+    let decoder = JSONDecoder() // decoder 선언
+    var data = location.data(using: .utf8) // String 타입을 data로 바꿔준다.
+
+    // 옵셔널바인딩을 통하여 data를 인스턴스로 디코딩하는 작업.
+    // 마찬가지로 디코딩중 실패할 수 있기 때문에 반드시 try랑 함께 써준다.
+    if let data = data, let myPerson = try? decoder.decode(Person.self, from: data) {
+        if location.uuid == myPerson.uuid{
+        
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+
+        let location = locations.first
+        let myla: Double = location!.coordinate.latitude
+        let mylon: Double = location!.coordinate.longitude
+        let myposition = CLLocationCoordinate2D(latitude: myla, longitude: mylon)
+
+        if let location = locations.first {
+            str_latitude = String(location.coordinate.latitude)
+            str_longitude = String(location.coordinate.longitude)
+            let request = NSMutableURLRequest(url: NSURL(string: "http://\(IP_ADDRESS)/insert.php")! as URL)
+            request.httpMethod = "POST"
+            let postString = "UUID=\(String(describing: UUID!))&str_latitude=\(str_latitude)&str_longitude=\(str_longitude)"
+            request.httpBody = postString.data(using: String.Encoding.utf8)
+            let task = URLSession.shared.dataTask(with: request as URLRequest) {
+                data, response, error in
+
+                if error != nil {
+                    print("error=\(String(describing: error))")
+                    return
+                }
+            }
+            task.resume()
+        }
+     }
+}
+    }
+  }
     
     // 세로방향 고정
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
