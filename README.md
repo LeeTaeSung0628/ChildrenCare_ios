@@ -8,12 +8,13 @@
 ---
 - Swift
 - StoryBoard
+- PHP
 - Firebase
 - DataBase: Realm, mySQL
 - Server: Apach, Tomcat
 - GoogleMaps
 - ARKit
-- PHP
+
 
 ### 📌 팀원 구성
 
