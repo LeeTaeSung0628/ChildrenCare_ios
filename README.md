@@ -21,7 +21,7 @@
 ---
 
 - iOS Developer[2]
-- BE [1]
+- BE / iOS [1]
 
 ### 📌 ChildrenCare 서비스 설명
 
